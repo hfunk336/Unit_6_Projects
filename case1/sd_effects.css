@@ -18,6 +18,8 @@ html{
    background-image: url(sd_back1.png);
    background-size: 100%;
    background-attachment: fixed;
+   /* makes the backgroung and image of the entire page and
+   so it doesn't scroll */
 }
 
 /* Body Styles */
@@ -27,24 +29,39 @@ body{
                      radial-gradient(circle closest-corner at 80% 40%,white 15%,rgba(0,0,0,0) 30%),
                      radial-gradient(circle closest-side at 10% 20%,white 20%,rgba(0,0,0,0) 45%),
                      radial-gradient(5% 5% at 90% 10%, white 15%, rgba(0,0,0,0) 40%);
+                     /* makes faded white spots on the body */
    background-color: rgb(151, 151, 151);
    box-shadow: rgb(31, 31, 31) 30px 0px 45px,
                rgb(31, 31, 31) -30px 0px 45px;
+               /* creates a shadow under the body to make it pop */
 }
 
 /* Navigation List Styles */
 body>header a{
    border-width: 5px;
    border-style: outset;
-   border-color: rgb(211, 211, 255); 
+   border-color: rgb(211, 211, 255);
+    /*creates the border design for the nav at the top of the page  */
 }
 
 /* Section Left Styles */
-h1{
+section#left article h1{
    color: rgb(211, 211, 211);
-   text-shadow: 0px 0px 5px;
+   text-shadow: black 0px 0px 5px;
 }
+/* makes the header text white with a shadow */
+section#left article img#mportrait{
+   filter: drop-shadow(-15px 0px 5px rgba(51, 51, 51, 0.9))
+            grayscale(0.7)
+            opacity(0.6);
+   transform: rotateY(180deg);
+}
+/* flips the image in the bottom right and adds filters */
 
 /* Footer Styles */
-
-
+footer{
+   border-top-width: 2px;
+   border-style: solid;
+   border-color: rgb(171,171,171);
+}
+/* adds a small grey line to seperate the footer from the body */
