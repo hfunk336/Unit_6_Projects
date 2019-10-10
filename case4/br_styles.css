@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Hunter Funk
+   Date: 10/10/19
+	
+   Filename: br_styles.css
+
+*/
+
+/* html Styles */
+html{
+   background-color: rgb(204, 189, 121);
+}
+
+/* Body Styles */
+body{
+   background-image: url(br_paper.png);
+   width: 85%;
+   margin-right: auto;
+   margin-left: auto;
+   box-shadow: rgb(100, 100, 100) 20px 0px 30px,
+               rgb(100, 100, 100) -20px 0px 30px;
+}
+body:after{
+   clear: both;
+   content: "";
+   display: table;
+}
+
+/* header Styles */
+header{
+   background-color: rgba(226, 151, 128, 0.7);
+}
+header img{
+   width: 100%
+}
+
+/* nav styles */
+nav li{
+   float: left;
+   text-align: center;
+   background-color: rgb(255, 161, 74);
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+nav ul#top li{
+   width: 20%;
+}
+nav ul#bottom li{
+   width: 25%;
+}
+a:link, a:visited{
+   color: rgb(0, 0, 0);
+}
+a:hover, a:active{
+   color: rgb(133, 123, 80);
+   width: 100%;
+}
+
+/* aside styles */
+aside{
+   font-size: 22px;
+}
+aside#address{
+   line-height: 50px;
+   float: left;
+   padding-left: 50px;
+   text-shadow: grey 5px 5px 10px;
+}
+aside#details{
+   float: right;
+   line-height: 35px;
+   padding-right: 50px;
+}
+
+/* article styles */
+article{
+   text-align: center;
+   clear: left;
+   width: 40%;
+   margin-left: 15px;
+   margin-bottom: 65px;
+   padding-bottom: 25px;
+   padding-top: 25px;
+   padding-right: 10px;
+   padding-left: 10px;
+   line-height: 30px;
+   background: radial-gradient(white 30%, rgba(226, 151, 128, 0.7));
+   border-width: 1px;
+   border-color: black;
+   border-style: solid;
+   border-radius: 45px;
+}
+
+/* section styles */
+section{
+   float: right;
+   clear: left;
+   width: 41%;
+   position: absolute;
+   top: 420px;
+   right: 200px;
+}
+section img{
+   width: 32%;
+   padding: 1px;
+   filter: saturate(2);
+}
+section img.left{
+   perspective: 900px;
+   transform: skewY(-10deg);
+   box-shadow: grey -10px -10px 20px;
+}
+section img.right{
+   perspective: 900px;
+   transform: skewY(10deg);
+   box-shadow: grey -10px -10px 20px;
+}
+section img.center{
+   perspective: 900px;
+   transform: translateZ(-20deg);
+   box-shadow: grey -10px -10px 20px;
+
+/* footer styles */
+footer{
+   background: linear-gradient(30deg, rgb(61, 61, 61), rgb(255, 161, 74));
+   text-align: center;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
