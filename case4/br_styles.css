@@ -17,6 +17,7 @@
 html{
    background-color: rgb(204, 189, 121);
 }
+/* sets the background color of the page */
 
 /* Body Styles */
 body{
@@ -27,11 +28,14 @@ body{
    box-shadow: rgb(100, 100, 100) 20px 0px 30px,
                rgb(100, 100, 100) -20px 0px 30px;
 }
+/* changes the background for the body and makes it appear
+as if it is popping of the page with a shadow */
 body:after{
    clear: both;
    content: "";
    display: table;
 }
+/* opens any collapsed containers */
 
 /* header Styles */
 header{
@@ -40,6 +44,7 @@ header{
 header img{
    width: 100%
 }
+/* makes the header look nice */
 
 /* nav styles */
 nav li{
@@ -49,19 +54,23 @@ nav li{
    padding-top: 5px;
    padding-bottom: 5px;
 }
+/* formats the nav bar */
 nav ul#top li{
    width: 20%;
 }
+/* evens out the nav bar top to look equal distance apart
+and take up all of the space */
 nav ul#bottom li{
    width: 25%;
 }
+/* does the same as the previous code but for the bottom nav */
 a:link, a:visited{
    color: rgb(0, 0, 0);
 }
 a:hover, a:active{
    color: rgb(133, 123, 80);
-   width: 100%;
 }
+/* changes the texts color when you hover over it */
 
 /* aside styles */
 aside{
@@ -73,11 +82,13 @@ aside#address{
    padding-left: 50px;
    text-shadow: grey 5px 5px 10px;
 }
+/* positions the address and adds a shadow to the words */
 aside#details{
    float: right;
    line-height: 35px;
    padding-right: 50px;
 }
+/* positions the details for the listing */
 
 /* article styles */
 article{
@@ -97,6 +108,8 @@ article{
    border-style: solid;
    border-radius: 45px;
 }
+/* makes a rounded box around the main article in the center 
+as well as uses a radial gradient to make it catch the eye */
 
 /* section styles */
 section{
@@ -107,25 +120,30 @@ section{
    top: 420px;
    right: 200px;
 }
+/* positions all of the images next to the article */
 section img{
    width: 32%;
    padding: 1px;
    filter: saturate(2);
 }
+/* makes the images into 3x3 columns with spacing in between
+as well as saturating them to look nicer */
 section img.left{
    perspective: 900px;
    transform: skewY(-10deg);
-   box-shadow: grey -10px -10px 20px;
+   box-shadow: grey -10px 10px 20px;
 }
 section img.right{
    perspective: 900px;
    transform: skewY(10deg);
-   box-shadow: grey -10px -10px 20px;
+   box-shadow: grey 10px 10px 20px;
 }
 section img.center{
    perspective: 900px;
    transform: translateZ(-20deg);
-   box-shadow: grey -10px -10px 20px;
+   box-shadow: grey -10px 10px 20px;
+}
+/* adds skews to the image to make it look 3d */
 
 /* footer styles */
 footer{
@@ -134,3 +152,4 @@ footer{
    padding-top: 10px;
    padding-bottom: 10px;
 }
+/* adds a linear gradient for the footer */
